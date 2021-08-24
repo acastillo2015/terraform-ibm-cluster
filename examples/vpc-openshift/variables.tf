@@ -5,12 +5,12 @@
 
 variable "cluster_name" {
   description = "Name of the cluster"
-  type        = "PoCVPC"
+  type        = "vpc"
 }
 
 variable "vpc_id" {
   description = "The ID of the VPC that you want to use for your cluster."
-  type        = "PoC"
+  type        = "poc"
 }
 
 variable "worker_pool_flavor" {
