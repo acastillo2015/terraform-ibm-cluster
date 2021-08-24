@@ -49,7 +49,7 @@ variable "delete_timeout" {
 
 variable "resource_group" {
   description = "The name of resource_group"
-  type        = "ArmandoC"
+  default        = "ArmandoC"
 }
 
 variable "update_all_workers" {
