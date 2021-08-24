@@ -5,23 +5,23 @@
 
 variable "cluster_name" {
   description = "Name of the cluster"
-  type        = string
+  type        = "PoCVPC"
 }
 
 variable "vpc_id" {
   description = "The ID of the VPC that you want to use for your cluster."
-  type        = string
+  type        = "PoC"
 }
 
 variable "worker_pool_flavor" {
   description = " The flavor of the VPC worker node that you want to use."
-  type        = string
+  type        = "b3c.4x16"
 }
 
 variable "worker_nodes_per_zone" {
   description = "The number of worker nodes per zone in the default worker pool."
   type        = number
-  default     = null
+  default     = 3
 }
 
 variable "worker_zones" {
@@ -49,7 +49,7 @@ variable "delete_timeout" {
 
 variable "resource_group" {
   description = "The name of resource_group"
-  type        = string
+  type        = "ArmandoC"
 }
 
 variable "update_all_workers" {
