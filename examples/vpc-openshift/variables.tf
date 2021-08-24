@@ -5,17 +5,17 @@
 
 variable "cluster_name" {
   description = "Name of the cluster"
-  type        = "vpc"
+  default      = "vpc"
 }
 
 variable "vpc_id" {
   description = "The ID of the VPC that you want to use for your cluster."
-  type        = "poc"
+  default      = "poc"
 }
 
 variable "worker_pool_flavor" {
   description = " The flavor of the VPC worker node that you want to use."
-  type        = "b3c.4x16"
+  default        = "b3c.4x16"
 }
 
 variable "worker_nodes_per_zone" {
